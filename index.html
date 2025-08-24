@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="나를 표현하는 모든 링크를 한 곳에 모아, 개성 있게 보여주는 나만의 인터랙티브 프로필 페이지">
+    <meta name="keywords" content="프로필, 링크, 포트폴리오, 소셜미디어">
+    <meta name="author" content="Vibe Me">
+    
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:title" content="장다솜 - 연구원 | Vibe Me">
+    <meta property="og:description" content="연구를 통해 세상을 바꾸는 연구원의 프로필. 연구 프로젝트, 논문, 그리고 일상을 공유합니다.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta property="og:image" content="https://your-domain.com/images/profile.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="장다솜 연구원의 프로필 사진">
+    <meta property="og:site_name" content="Vibe Me">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="장다솜 - 연구원 | Vibe Me">
+    <meta name="twitter:description" content="연구를 통해 세상을 바꾸는 연구원의 프로필">
+    <meta name="twitter:image" content="https://your-domain.com/images/profile.jpg">
+    <meta name="twitter:image:alt" content="장다솜 연구원의 프로필 사진">
+    
+    <!-- 카카오톡 공유 메타 태그 -->
+    <meta property="kakao:title" content="장다솜 - 연구원">
+    <meta property="kakao:description" content="연구를 통해 세상을 바꾸는 연구원의 프로필">
+    <meta property="kakao:image" content="https://your-domain.com/images/profile.jpg">
+    
+    <title>Vibe Me - 나만의 프로필 링크 페이지</title>
+    
+    <!-- Pretendard 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- 애니메이션 배경 -->
+    <div class="animated-background">
+        <div class="blob blob-1" data-speed="0.5"></div>
+        <div class="blob blob-2" data-speed="0.3"></div>
+        <div class="blob blob-3" data-speed="0.7"></div>
+        <div class="blob blob-4" data-speed="0.4"></div>
+        <div class="blob blob-5" data-speed="0.6"></div>
+    </div>
+    
+    <!-- 프로필 섹션 -->
+    <header class="profile-section" role="banner">
+        <!-- 다크 모드 토글 버튼 -->
+        <button class="theme-toggle" id="themeToggle" aria-label="다크 모드 토글" type="button">
+            <span class="theme-icon" id="themeIcon">🌙</span>
+        </button>
+        
+        <div class="hero-container">
+            <!-- 메인 타이틀 -->
+            <div class="hero-content">
+                <!-- 프로필 이미지 -->
+                <div class="profile-image-wrapper">
+                    <img src="./images/profile.jpg" alt="프로필 사진" class="profile-image" id="profileImage">
+                </div>
+                
+                <!-- 프로필 정보 -->
+                <div class="profile-info">
+                    <h2 class="profile-name" id="profileName">장다솜</h2>
+                    <p class="profile-subtitle" id="profileSubtitle">UX/UI Designer</p>
+                    <p class="profile-description" id="profileDescription">사용자의 마음을 읽는 디자이너</p>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="welcome-text">Welcome to my</span>
+                    <span class="portfolio-text" id="typingText">Portfolio</span>
+                    <span class="typing-cursor">|</span>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content" role="main">
+        <!-- 링크 버튼 섹션 -->
+        <section class="links-section" aria-labelledby="links-heading">
+            <h2 id="links-heading" class="sr-only">소셜 미디어 및 프로젝트 링크</h2>
+            
+            <nav class="links-nav" role="navigation" aria-label="외부 링크 목록">
+                <ul class="links-list">
+                    <!-- 포트폴리오 링크 -->
+                    <li class="link-item">
+                        <a href="#" class="link-button" target="_blank" rel="noopener noreferrer" aria-label="포트폴리오 사이트 보기" data-image="portfolio">
+                            <span class="link-icon" aria-hidden="true">🎨</span>
+                            <div class="link-content">
+                                <span class="link-text">Portfolio</span>
+                                <span class="link-description">디자인 프로젝트와 작업물을 확인하세요</span>
+                            </div>
+                            <div class="hover-image" data-type="portfolio">
+                                <div class="image-placeholder portfolio-img">🎨✨</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <!-- GitHub 링크 -->
+                    <li class="link-item">
+                        <a href="#" class="link-button" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 보기" data-image="github">
+                            <span class="link-icon" aria-hidden="true">🐙</span>
+                            <div class="link-content">
+                                <span class="link-text">GitHub</span>
+                                <span class="link-description">코드와 프로젝트를 확인하세요</span>
+                            </div>
+                            <div class="hover-image" data-type="github">
+                                <div class="image-placeholder github-img">💻🔧</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <!-- 인스타그램 링크 -->
+                    <li class="link-item">
+                        <a href="#" class="link-button" target="_blank" rel="noopener noreferrer" aria-label="인스타그램 보기" data-image="instagram">
+                            <span class="link-icon" aria-hidden="true">📸</span>
+                            <div class="link-content">
+                                <span class="link-text">Instagram</span>
+                                <span class="link-description">디자인 과정과 일상을 공유합니다</span>
+                            </div>
+                            <div class="hover-image" data-type="instagram">
+                                <div class="image-placeholder instagram-img">📸🌈</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Stats 섹션 -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item" data-target="80">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Design Projects</div>
+                </div>
+                <div class="stat-item" data-target="120">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Webtoon Episodes</div>
+                </div>
+                <div class="stat-item" data-target="25">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-target="3">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Design Awards</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills 섹션 -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Design Tools & Skills</h2>
+                <p class="section-description">디자인과 웹툰 편집에 사용하는 전문 도구들과 기술</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Design Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe XD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Sketch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Creative Suite</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Illustrator</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">After Effects</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Midjourney</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ChatGPT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Stable Diffusion</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects 섹션 -->
+        <section class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-description">최근 진행한 디자인 프로젝트와 웹툰 작업들</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🎨</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Mobile App Design</h3>
+                        <p class="project-description">사용자 중심의 모바일 쇼핑 앱 UI/UX 디자인 및 인터랙션 프로토타입 개발</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">Prototyping</span>
+                            <span class="project-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fantasy Romance Webtoon</h3>
+                        <p class="project-description">로맨스 판타지 장르의 웹툰 편집 및 말풍선 디자인, 컬러링 작업</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Photoshop</span>
+                            <span class="project-tag">Editing</span>
+                            <span class="project-tag">Typography</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">💼</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SaaS Dashboard Redesign</h3>
+                        <p class="project-description">기업용 대시보드 리디자인 프로젝트 - 데이터 시각화 및 사용성 개선</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Adobe XD</span>
+                            <span class="project-tag">Data Viz</span>
+                            <span class="project-tag">B2B UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 버튼 섹션 -->
+        <section class="contact-section">
+            <div class="contact-cta">
+                <h2 class="contact-title">Let's Create Something Amazing</h2>
+                <p class="contact-description">새로운 디자인 프로젝트나 웹툰 작업이 있다면 언제든 연락주세요!</p>
+                <div class="contact-buttons">
+                    <button class="contact-button primary" id="contactButton" aria-label="연락처 정보 보기" type="button">
+                        <span class="contact-icon" aria-hidden="true">📧</span>
+                        <span class="contact-text">Get In Touch</span>
+                    </button>
+                    <a href="mailto:dasom.jang@example.com" class="contact-button secondary" id="emailButton">
+                        <span class="contact-icon" aria-hidden="true">✉️</span>
+                        <span class="contact-text">Send Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 연락처 모달 -->
+    <dialog class="contact-modal" id="contactModal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2 id="modal-title" class="modal-title">연락하기</h2>
+                <button class="modal-close-button" id="modalCloseButton" aria-label="모달 닫기" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </header>
+            
+            <div class="modal-body" id="modal-description">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">이메일:</span>
+                        <a href="mailto:dasom.jang@example.com" class="contact-link" id="emailLink">dasom.jang@example.com</a>
+                        <button class="copy-button" data-copy="dasom.jang@example.com" aria-label="이메일 주소 복사" type="button">
+                            📋 복사
+                        </button>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">카카오톡:</span>
+                        <a href="https://open.kakao.com/your-link" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            카카오톡 오픈채팅
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">텔레그램:</span>
+                        <a href="https://t.me/your-username" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            @your-username
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 모달 배경 클릭으로 닫기 -->
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+    </dialog>
+
+    <!-- 푸터 -->
+    <footer class="footer" role="contentinfo">
+        <p class="footer-text">
+            © 2024 Vibe Me. Made with 💚
+        </p>
+    </footer>
+
+    <!-- JavaScript 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
